@@ -1,0 +1,27 @@
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #00FF00; /* Curseur effet machine à écrire */
+    width: 0;
+    animation: typing 3s steps(30) 1s 1 normal both;
+}
+
+/* Effet de survol sur les boutons */
+.btn:hover {
+    background-color: #00cc00;
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 255, 0, 0.5); /* Ombre ajoutée */
+    transition: transform 0.3s ease-in-out, background-color 0.3s, box-shadow 0.3s;
+}
+
+
+/* Effet de survol sur les projets */
+.project:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

@@ -1,0 +1,95 @@
+/* Style pour Projet 4 - Bot Discord Personnalisé */
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#projet4 {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.projet h2 {
+    font-size: 2.2em;
+    color: #00ff00;
+}
+
+.projet p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+h3 {
+    color: #00ff00;
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+.feature h4 {
+    font-size: 1.5em;
+    color: #00ff00;
+    margin-top: 10px;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 2px solid #00ff00;
+}
+
+.feature p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00ff00;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: #00cc00;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    border-top: 2px solid #00ff00;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+}

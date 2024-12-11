@@ -1,0 +1,43 @@
+/* Fond de la page projet1 */
+#projet1 {
+    background-color: black; /* Fond noir */
+    color: #00FF00; /* Texte vert rétro */
+    font-family: 'Courier New', Courier, monospace; /* Police rétro */
+    padding: 20px;
+}
+
+h2, h3, p, ul {
+    color: #00FF00; /* Texte en vert pour les titres et paragraphes */
+}
+
+/* Appliquer un fond noir à l'ensemble de la page */
+body {
+    background-color: black; /* Fond noir pour toute la page */
+    color: #00FF00; /* Texte vert pour tout le texte */
+}
+
+/* Donne un peu d'espace autour des images */
+.screenshots {
+    margin-top: 20px;
+}
+
+/* Style général pour les images */
+.screenshot {
+    margin: 10px;
+    border: 2px solid #00FF00; /* Bordure verte autour des images */
+    padding: 10px;
+    width: 100%; /* Redimensionner pour qu'elles occupent toute la largeur de leur conteneur */
+    height: auto; /* Garder la proportion de l'image */
+    max-width: 800px; /* Limiter la largeur maximale pour les images */
+    display: block; /* Les images doivent être des blocs */
+}
+
+/* Image large */
+.screenshot.large {
+    max-width: 1000px; /* Largeur spécifique */
+}
+
+/* Image petite */
+.screenshot.small {
+    max-width: 600px; /* Largeur spécifique pour l'autre image */
+}
