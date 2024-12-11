@@ -25,7 +25,7 @@ h1 {
     margin: 20px auto;
     background-color: #222;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Ajoute une légère ombre verte autour du contenu */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
 h2 {
@@ -41,7 +41,7 @@ ul {
 
 .screenshots {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;  /* Centrer les images */
     flex-wrap: wrap;
     margin: 20px 0;
 }
@@ -52,7 +52,15 @@ ul {
     border: 2px solid #00ff00;
     border-radius: 5px;
     padding: 5px;
-    background-color: #111; /* Fond sombre derrière l'image pour un effet rétro */
+    background-color: #111;
+}
+
+/* Ajout pour gérer la taille des images dans .screenshots */
+.screenshots img {
+    max-width: 100%;  /* Limiter la largeur de l'image au conteneur */
+    height: auto;  /* Garder les proportions de l'image */
+    display: block;  /* Éviter les marges autour de l'image */
+    margin: 0 auto;  /* Centrer l'image horizontalement */
 }
 
 footer {
@@ -69,3 +77,4 @@ footer {
 footer p {
     margin: 0;
 }
+
