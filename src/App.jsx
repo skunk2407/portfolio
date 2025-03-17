@@ -33,9 +33,9 @@ const AnimatedRoutes = () => {
           flexGrow: 1,
           display: "flex",
           flexDirection: "column",
-          minHeight: "calc(100vh - 60px)", // S'assure que le contenu prend toute la hauteur sans dépasser
-          paddingTop: "60px",
-          backgroundColor: "#121212", // Remet le fond sombre
+          minHeight: "calc(100vh - 120px)", // J'ai ajusté ici pour ne pas faire déborder le footer
+          paddingTop: "60px", // Si tu veux garder un espace entre le header et le contenu
+          backgroundColor: "#121212",
         }}
       >
         <Routes>
@@ -55,6 +55,7 @@ const AnimatedRoutes = () => {
 
 const App = () => {
   const location = useLocation();
+  // Cacher le footer pour les pages projets spécifiques
   const hideFooter = ["/projets/e5", "/projets/e6", "/projets/perso"].includes(location.pathname);
 
   return (
@@ -62,13 +63,15 @@ const App = () => {
       display: "flex",
       flexDirection: "column",
       minHeight: "100vh",
-      backgroundColor: "#121212", // S'assure que toute la page garde le fond sombre
-      overflowX: "hidden", // Évite le scroll horizontal
+      backgroundColor: "#121212",
+      overflowX: "hidden",
     }}>
+      {/* Le Header est toujours visible */}
       <Header />
       <div style={{ flexGrow: 1 }}>
         <AnimatedRoutes />
       </div>
+      {/* Le Footer est conditionnel */}
       {!hideFooter && <Footer />}
     </div>
   );

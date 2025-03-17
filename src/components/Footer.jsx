@@ -8,10 +8,10 @@ function Footer() {
   if (isHidden) return null;
 
   return (
-    <footer className="bg-gray-800 text-center py-4 w-full fixed bottom-0 opacity-100">
+    <footer className="bg-gray-800 text-center py-4 w-full opacity-100">
       <p className="text-gray-400">© 2025 Nolan Berhault - Tous droits réservés.</p>
     </footer>
   );
 }
 
-export default Footer;
+export default Footer;  {/* Ajoute cette ligne */}
