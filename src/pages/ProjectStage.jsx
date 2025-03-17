@@ -40,7 +40,7 @@ const ProjectStage = () => {
       {/* Screenshots */}
       <div className="flex flex-col md:flex-row gap-6 mb-8">
         <motion.img
-          src="/screenshots/projet-stage-1.png"
+          src="/portfolio/screenshots/projet-stage-1.png"
           alt="Screenshot 1"
           className="w-full md:w-1/2 rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -48,7 +48,7 @@ const ProjectStage = () => {
           transition={{ duration: 1 }}
         />
         <motion.img
-          src="/screenshots/projet-stage-2.png"
+          src="/portfolio/screenshots/projet-stage-2.png"
           alt="Screenshot 2"
           className="w-full md:w-1/2 rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
