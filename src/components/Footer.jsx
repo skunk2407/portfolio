@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const location = useLocation();
@@ -10,6 +11,7 @@ function Footer() {
   return (
     <footer className="bg-gray-800 text-center py-4 w-full opacity-100">
       <p className="text-gray-400">© 2025 Nolan Berhault - Tous droits réservés.</p>
+      <Link to="/legal" className="text-sm text-gray-400 hover:underline">Mentions légales</Link>
     </footer>
   );
 }

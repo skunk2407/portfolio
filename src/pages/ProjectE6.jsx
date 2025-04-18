@@ -59,7 +59,7 @@ const ProjectE6 = () => {
         >
           <h3 className="text-xl font-semibold mb-2">Client Léger - Site Web</h3>
           <img
-            src="/portfolio/screenshots/client-leger.png"
+            src={`${import.meta.env.BASE_URL}screenshots/client-leger.png`}
             alt="Client Léger"
             className="w-full rounded-lg shadow-lg mb-4"
           />
@@ -77,7 +77,7 @@ const ProjectE6 = () => {
         >
           <h3 className="text-xl font-semibold mb-2">Client Lourd - Application de Bureau</h3>
           <img
-            src="/portfolio/screenshots/client-lourd.png"
+            src={`${import.meta.env.BASE_URL}screenshots/client-lourd.png`}
             alt="Client Lourd"
             className="w-full rounded-lg shadow-lg mb-4"
           />

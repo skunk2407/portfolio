@@ -11,6 +11,9 @@ import ProjectStage from "./pages/ProjectStage";
 import ProjectE6 from "./pages/ProjectE6";
 import ProjectSkanak from "./pages/ProjectSkanak";
 import Contact from "./pages/Contact";
+import Legal from "./pages/Legal";
+import VeilleTechnologique from "./pages/VeilleTechnologique";
+
 
 const pageVariants = {
   initial: { opacity: 0, filter: "blur(10px)" },
@@ -47,6 +50,8 @@ const AnimatedRoutes = () => {
           <Route path="/projets/e6" element={<ProjectE6 />} />
           <Route path="/projets/perso" element={<ProjectSkanak />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/veille" element={<VeilleTechnologique />} />
         </Routes>
       </motion.div>
     </AnimatePresence>

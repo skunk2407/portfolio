@@ -2,15 +2,17 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const text = `Passionné par l’informatique et les nouvelles technologies, j’ai toujours aimé comprendre, créer et optimiser.
+  const text = `Je m'appelle Nolan Berhault, étudiant en BTS SIO option SLAM.
 
-Actuellement en BTS Services Informatiques aux Organisations (SIO) - option SLAM, je me spécialise dans le développement web et l’automatisation, tout en ayant un fort intérêt pour la cybersécurité.
+Passionné par l’informatique et les nouvelles technologies, j’ai toujours aimé comprendre, créer et optimiser.
 
-J’ai eu l’opportunité de travailler sur plusieurs projets concrets, notamment en développement web (JavaScript, HTML, CSS, Python) et en automatisation de tâches via des outils comme Zennoposter et Selenium. Ces expériences m’ont permis de développer un esprit analytique, une capacité à résoudre des problèmes techniques, et une certaine rigueur dans l’optimisation de scripts.
+Je me spécialise dans le développement web et l’automatisation, tout en ayant un fort intérêt pour la cybersécurité.
 
-En dehors du code, je suis aussi passionné par l’Histoire, un domaine que j’ai exploré en études supérieures. Le gaming et la musculation occupent également une place importante dans mon quotidien, alliant réflexion et dépassement de soi.
+J’ai travaillé sur plusieurs projets concrets en JavaScript, HTML, CSS, Python, ainsi qu’avec des outils comme Zennoposter et Selenium.
 
-Toujours en quête d’apprentissage, je me projette à long terme dans un métier alliant développement et cybersécurité, avec l’ambition d’apporter des solutions efficaces et sécurisées dans un monde numérique en constante évolution.`;
+En dehors du code, je suis passionné par l’Histoire, le gaming et la musculation, des activités qui nourrissent ma curiosité et ma rigueur.
+
+Je me projette dans un métier alliant développement et cybersécurité, avec l’ambition d’apporter des solutions efficaces et sécurisées.`;
 
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
@@ -20,30 +22,43 @@ Toujours en quête d’apprentissage, je me projette à long terme dans un méti
       const timeout = setTimeout(() => {
         setDisplayedText((prev) => prev + text[index]);
         setIndex(index + 1);
-      }, 25); // Vitesse de l'écriture réduite pour un effet plus fluide
+      }, 10);
       return () => clearTimeout(timeout);
     }
   }, [index, text]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen p-6 bg-gray-100"> {/* Ajout d'un fond clair */}
-      <motion.h1
-        initial={{ y: 0, opacity: 1 }}
-        animate={{ y: -100, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="text-4xl font-bold mb-6 text-black" // Assure que le texte est bien visible
-      >
-        À propos
-      </motion.h1>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-        className="max-w-2xl bg-white p-6 rounded-lg shadow-lg text-lg"
-      >
-        <p style={{ whiteSpace: "pre-line" }}>{displayedText}</p>
-      </motion.div>
-    </div>
+    <motion.div
+      className="max-w-3xl mx-auto p-6 text-white"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <h1 className="text-4xl font-bold mb-6 text-center">À propos de moi</h1>
+      <p className="text-gray-300 mb-6 text-lg text-justify whitespace-pre-line">
+        {displayedText}
+      </p>
+
+      <div className="flex gap-4 mt-8 justify-center flex-wrap">
+        <a
+          href="/cv_bts.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-xl shadow"
+        >
+          📄 Prévisualiser mon CV
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/nolanberhault"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-xl shadow"
+        >
+          🔗 LinkedIn
+        </a>
+      </div>
+    </motion.div>
   );
 };
 

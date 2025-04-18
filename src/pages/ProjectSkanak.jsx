@@ -43,7 +43,7 @@ const ProjectSkanak = () => {
       {/* Screenshots */}
       <div className="flex flex-col md:flex-row gap-6 mb-8">
         <motion.img
-          src="/portfolio/screenshots/skanak-screenshot-1.png"
+          src={`${import.meta.env.BASE_URL}screenshots/skanak-screenshot-1.png`}
           alt="Portail des Développeurs Discord"
           className="w-full md:w-1/2 rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -51,7 +51,7 @@ const ProjectSkanak = () => {
           transition={{ duration: 1 }}
         />
         <motion.img
-          src="/portfolio/screenshots/skanak-screenshot-2.png"
+          src={`${import.meta.env.BASE_URL}screenshots/skanak-screenshot-2.png`}
           alt="Attribution de Rôles"
           className="w-full md:w-1/2 rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -62,7 +62,7 @@ const ProjectSkanak = () => {
       
       <div className="flex flex-col md:flex-row gap-6 mb-8">
         <motion.img
-          src="/portfolio/screenshots/skanak-screenshot-3.png"
+          src={`${import.meta.env.BASE_URL}screenshots/skanak-screenshot-3.png`}
           alt="Mèmes Automatiques"
           className="w-full md:w-1/2 rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -70,7 +70,7 @@ const ProjectSkanak = () => {
           transition={{ duration: 1 }}
         />
         <motion.img
-          src="/portfolio/screenshots/skanak-screenshot-4.png"
+          src={`${import.meta.env.BASE_URL}screenshots/skanak-screenshot-4.png`}
           alt="Message de Bienvenue"
           className="w-full md:w-1/2 rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -81,7 +81,7 @@ const ProjectSkanak = () => {
 
       <div className="flex flex-col md:flex-row gap-6 mb-8">
         <motion.img
-          src="/portfolio/screenshots/skanak-screenshot-5.png"
+          src={`${import.meta.env.BASE_URL}screenshots/skanak-screenshot-5.png`}
           alt="Système Économique"
           className="w-full md:w-1/2 rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -89,7 +89,7 @@ const ProjectSkanak = () => {
           transition={{ duration: 1 }}
         />
         <motion.img
-          src="/portfolio/screenshots/skanak-screenshot-6.png"
+          src={`${import.meta.env.BASE_URL}screenshots/skanak-screenshot-6.png`}
           alt="Comptage"
           className="w-full md:w-1/2 rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
