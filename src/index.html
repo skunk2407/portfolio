@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nolan Berhault</title>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-glass sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          Nolan <span class="text-accent">Berhault</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero">
+  <div class="hero-center text-center">
+
+    <h1 class="display-3 fw-bold lh-1">
+      Hi, It's <span class="text-accent">Nolan</span>
+    </h1>
+
+    <h2 class="h3 fw-semibold mt-3">
+      I’m a <span class="text-accent">Web Developer</span>
+      <span class="text-muted-2">(Laravel / PHP)</span>
+    </h2>
+
+    <p class="hero-sub">
+      I build clean and maintainable web applications with Laravel, focusing on
+      performance, security and user experience.
+    </p>
+
+    <div class="socials d-flex justify-content-center gap-3 mt-4">
+      <a href="https://www.linkedin.com/in/nolanberhault"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/skunk2407"><i class="bi bi-github"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <a class="scroll-hint" href="#about">↓</a>
+  </div>
+</header>
+
+    <!-- SECTIONS (placeholders) -->
+    <section id="about" class="section about">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <!-- IMAGE + ORBIT -->
+      <div class="col-12 col-lg-6 text-center">
+        <div class="about-visual">
+          <div class="orbit-wrap">
+            <img src="/about.png" alt="About visual" class="about-img" />
+
+            <div class="orbit-icons" aria-hidden="true">
+              <span class="orbit-icon" style="--a:0deg"><i class="bi bi-filetype-php"></i></span>
+              <span class="orbit-icon" style="--a:60deg"><i class="bi bi-filetype-py"></i></span>
+              <span class="orbit-icon" style="--a:120deg"><i class="bi bi-filetype-js"></i></span>
+              <span class="orbit-icon" style="--a:180deg"><i class="bi bi-database"></i></span>
+              <span class="orbit-icon" style="--a:240deg"><i class="bi bi-git"></i></span>
+              <span class="orbit-icon" style="--a:300deg"><i class="bi bi-bootstrap"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEXTE -->
+      <div class="col-12 col-lg-6">
+        <h2 class="about-title">
+          About <span class="text-accent">Me</span>
+        </h2>
+
+        <p class="about-text">
+          I'm Nolan, a Web Developer specialized in <span class="text-accent">Laravel / PHP</span>.
+          I like building clean, maintainable applications with a strong focus on performance and UX.
+        </p>
+
+        <p class="about-text">
+          Passionate about IT and new technologies, I enjoy understanding how things work,
+          creating solutions, and optimizing systems.
+        </p>
+
+        <button
+        class="btn btn-readmore mt-3"
+        data-bs-toggle="modal"
+        data-bs-target="#aboutModal">
+        Read More
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="project" class="projects section py-5">
+  <div class="container">
+
+    <h2 class="section-title text-center mb-5">
+      My <span class="text-accent">Projects</span>
+    </h2>
+
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-12 col-lg-4">
+        <button class="project-card w-100 text-start"
+          data-bs-toggle="modal"
+          data-bs-target="#project1Modal">
+       <div class="project-icon mb-3">
+            <i class="bi bi-discord"></i>
+            </div>
+
+            <h3 class="project-title mb-2">Discord Bot (Skanak)</h3>
+
+            <p class="project-desc mb-0">
+              Modular Python bot with utilities, moderation tools, and community features.
+            </p>
+        </button>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-12 col-lg-4">
+        <button class="project-card w-100 text-start"
+                data-bs-toggle="modal"
+                data-bs-target="#project2Modal">
+          <div class="project-icon mb-3">
+            <i class="bi bi-robot"></i>
+          </div>
+          <h3 class="project-title mb-2">Backlinks Automation</h3>
+          <p class="project-desc mb-0">
+            Automated backlink monitoring & reporting system.
+          </p>
+        </button>
+      </div>
+
+      <!-- Project 3 -->
+<div class="col-12 col-lg-4">
+  <button class="project-card w-100 text-start"
+          data-bs-toggle="modal"
+          data-bs-target="#project3Modal">
+    <div class="project-icon mb-3">
+      <i class="bi bi-globe2"></i>
+    </div>
+
+    <h3 class="project-title mb-2">Community Website</h3>
+
+    <p class="project-desc mb-0">
+      Private team platform with authentication and member features.
+    </p>
+  </button>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT 1 MODAL -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border-0">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Discord Bot <span class="text-accent">(Skanak)</span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Personal Discord bot built in Python with a modular structure,
+          designed to add useful features to a community server.
+        </p>
+
+        <p class="mb-3">
+          The project is organized by feature modules (welcome system, economy, temporary voice channels,
+          logs, events, and more), which makes it easy to maintain and extend over time.
+        </p>
+
+        <h6 class="text-uppercase text-muted mb-2">Key features</h6>
+        <ul class="mb-4">
+          <li>Welcome / onboarding flow</li>
+          <li>Temporary voice channel system</li>
+          <li>Economy & counters (utility modules)</li>
+          <li>Moderation tools (ex: purge) and server logs</li>
+          <li>Fun commands / meme features</li>
+        </ul>
+
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-secondary">Python</span>
+          <span class="badge text-bg-secondary">Discord API</span>
+          <span class="badge text-bg-secondary">Modular architecture</span>
+          <span class="badge text-bg-secondary">Bot commands</span>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a class="btn btn-readmore" href="https://github.com/skunk2407/Skanak" target="_blank">
+          View on GitHub
+        </a>
+        <button class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- PROJECT 2 MODAL -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border-0">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Backlinks <span class="text-accent">Automation System</span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Automated system developed during my internship to monitor backlinks
+          from Google Search Console across multiple websites.
+        </p>
+
+        <p>
+          The tool retrieves backlink reports, compares them with previous data,
+          detects new links, and sends email notifications when changes are found.
+        </p>
+
+        <p>
+          This automation reduced manual work and ensured reliable,
+          continuous backlink tracking.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-secondary">Python</span>
+          <span class="badge text-bg-secondary">Google Search Console</span>
+          <span class="badge text-bg-secondary">SMTP</span>
+          <span class="badge text-bg-secondary">Automation</span>
+          <span class="badge text-bg-secondary">Task Scheduling</span>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 3 MODAL -->
+<div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border-0">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Community <span class="text-accent">Website</span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Private website built for a gaming community to centralize team information,
+          member access, and internal content.
+        </p>
+
+        <p class="mb-3">
+          The project focuses on a clean UI, responsive layout, and structured pages.
+          The repository is kept private (available on request).
+        </p>
+
+        <h6 class="text-uppercase text-muted mb-2">Highlights</h6>
+        <ul class="mb-4">
+          <li>Authentication and member-only areas</li>
+          <li>Role-based access (public vs members)</li>
+          <li>Content sections (news / media / team pages)</li>
+          <li>Responsive design + consistent dark theme</li>
+        </ul>
+
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-secondary">Web</span>
+          <span class="badge text-bg-secondary">Authentication</span>
+          <span class="badge text-bg-secondary">Responsive UI</span>
+          <span class="badge text-bg-secondary">Role-based access</span>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <section id="contact" class="contact section">
+  <div class="container">
+    <div class="contact-wrapper mx-auto">
+    <h2 class="section-title text-center mb-5">
+      Contact <span class="text-accent">Me</span>
+    </h2>
+
+    <form
+  class="contact-form"
+  action="https://formspree.io/f/xgoywazp"
+  method="POST"
+>
+  <div class="row g-4">
+    <!-- Left -->
+    <div class="col-12 col-lg-6">
+      <input type="text" name="name" class="form-control neon-input" placeholder="Full Name" required>
+      <input type="email" name="email" class="form-control neon-input mt-3" placeholder="Email" required>
+      <input type="text" name="phone" class="form-control neon-input mt-3" placeholder="Phone Number">
+      <input type="text" name="subject" class="form-control neon-input mt-3" placeholder="Subject" required>
+    </div>
+
+    <!-- Right -->
+    <div class="col-12 col-lg-6">
+      <textarea name="message" rows="6"
+        class="form-control neon-input neon-textarea"
+        placeholder="Your Message"
+        required></textarea>
+
+      <!-- optionnel : redirection après envoi -->
+      <input type="hidden" name="_subject" value="New message from your portfolio">
+      <input type="hidden" name="_redirect" value="http://localhost:8080/#contact">
+
+      <button type="submit" class="btn btn-neon mt-4">
+        Send Message
+      </button>
+      <p class="mt-3 small text-muted-2" id="contactStatus" style="display:none;">
+        Message sent ✅ I’ll get back to you soon.
+      </p>
+    </div>
+  </div>
+  </div>
+</form>
+  </div>
+</section>
+
+
+    <!-- IMPORTANT: index.html est dans src/ donc chemin relatif -->
+    <script type="module" src="./js/main.js"></script>
+
+ <footer class="site-footer section" id="footer">
+  <div class="container text-center">
+    <div class="footer-socials d-flex justify-content-center gap-3 mb-3">
+      <a href="https://github.com/TON_GITHUB" target="_blank" aria-label="GitHub" class="social-btn">
+        <i class="bi bi-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/TON_LINKEDIN" target="_blank" aria-label="LinkedIn" class="social-btn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+
+      <a href="#" aria-label="Instagram (coming soon)" class="social-btn disabled" tabindex="-1" aria-disabled="true">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+
+    <div class="footer-links small mb-2">
+      <a href="#home">Home</a>
+      <span class="sep">•</span>
+      <a href="#about">About</a>
+      <span class="sep">•</span>
+      <a href="#project">Project</a>
+      <span class="sep">•</span>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-copy small text-muted-2">
+      © <span id="year"></span> Nolan Berhault • All rights reserved
+    </div>
+  </div>
+</footer>
+<div class="custom-cursor"></div>
+  </body>
+</html>
+
+
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border-0">
+
+      <div class="modal-header">
+        <h5 class="modal-title">
+          About <span class="text-accent">Me</span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p class="mb-4">
+          I’m Nolan Berhault, a Web Developer focused on <strong>Laravel / PHP</strong>.
+          I like building clean, maintainable applications with attention to performance and UX.
+        </p>
+
+        <h6 class="text-uppercase text-muted mb-2">Experience</h6>
+        <ul class="mb-4">
+          <li>
+            <strong>Internship (À Vous le Web)</strong> Backlinks automation (download + processing).
+            Python scripts to organize and compare Excel files.
+          </li>
+          <li>
+            <strong>Personal project</strong> Discord bot in Python (community features, APIs, real-time events) and a personal-use website for my gaming team, built with Laravel and hosted on OVHcloud.
+          </li>
+        </ul>
+
+        <h6 class="text-uppercase text-muted mb-2">Education</h6>
+        <ul class="mb-4">
+          <li><strong>Bachelor Web Development</strong> MyDigitalSchool Rennes (2025)</li>
+          <li><strong>BTS SIO (SLAM)</strong> AFTEC Rennes (2023–2025)</li>
+        </ul>
+
+        <h6 class="text-uppercase text-muted mb-2">Tech stack</h6>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <span class="badge text-bg-secondary">Laravel</span>
+          <span class="badge text-bg-secondary">PHP</span>
+          <span class="badge text-bg-secondary">JavaScript</span>
+          <span class="badge text-bg-secondary">HTML/CSS</span>
+          <span class="badge text-bg-secondary">Python</span>
+          <span class="badge text-bg-secondary">MySQL</span>
+          <span class="badge text-bg-secondary">SQLite</span>
+          <span class="badge text-bg-secondary">Git / GitLab</span>
+          <span class="badge text-bg-secondary">PHPUnit</span>
+          <span class="badge text-bg-secondary">GLPI</span>
+          <span class="badge text-bg-secondary">Veeam</span>
+          <span class="badge text-bg-secondary">React (notions)</span>
+        </div>
+
+        <h6 class="text-uppercase text-muted mb-2">Currently looking for</h6>
+        <p class="mb-0">
+          Opportunities where I can grow as a Laravel developer and ship real projects.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <a class="btn btn-readmore" href="/cv-nolan-berhault.pdf" target="_blank" rel="noopener">
+        View CV (PDF)
+        </a>
+        <button class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
